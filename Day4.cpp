@@ -1,6 +1,8 @@
 class Solution {
 public:
    int findComplement(int num) {
+	ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
 	int binaryNum[32], i;
 	for(i = 0; num > 0; i++)
 	{
