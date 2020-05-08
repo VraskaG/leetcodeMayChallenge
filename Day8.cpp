@@ -4,6 +4,8 @@ class Solution {
       return !b?a:gcd(b,a%b);
    }
    bool checkStraightLine(vector<vector<int>>& coordinates) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
         if(coordinates.size() <= 2)
              return 1;
         int xn = coordinates[0][0] - coordinates[1][0];
