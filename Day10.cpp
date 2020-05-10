@@ -1,7 +1,5 @@
 class Solution {
 public:
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
     int findJudge(int N, vector<vector<int>>& trust) {
         int counter[1001]={0};
         for ( auto x : trust){
