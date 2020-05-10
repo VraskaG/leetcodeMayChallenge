@@ -10,12 +10,13 @@ class Solution {
              return 1;
         int xn = coordinates[0][0] - coordinates[1][0];
         int yn = coordinates[0][1] - coordinates[1][1];
-        for(int i=2; i < coordinates.size(); i++){
-		    int x = coordinates[i][0];
-            int y = coordinates[i][1];   
-		    if( xn*(y - coordinates[0][1]) != yn*(x - coordinates[0][0]) )
+        for(int i=2; i < coordinates.size(); i++)
+	{
+		int x = coordinates[i][0];
+            	int y = coordinates[i][1];   
+		if( xn*(y - coordinates[0][1]) != yn*(x - coordinates[0][0]) )
 			        return false;
-	    }
+	}
 	    return true;
    }
 };
